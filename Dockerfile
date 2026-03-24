@@ -1,5 +1,3 @@
-FROM openjdk:17-jdk-slim
-WORKDIR /app
-COPY target/my-app-1.0.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+FROM tomcat:9-jdk17
+
+COPY target/*.war /usr/local/tomcat/webapps/app.war
