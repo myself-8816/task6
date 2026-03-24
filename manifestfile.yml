@@ -14,7 +14,7 @@ spec:
 spec:
   containers:
     - name: cicd
-      image: pavansai33/pavanimg:v123
+      image: pavansai33/pavan1img:v123
       ports:
     - containerPort: 8080
 
