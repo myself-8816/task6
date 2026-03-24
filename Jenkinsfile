@@ -10,7 +10,7 @@ pipeline {
         stage('checkout') {
             steps {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/myself-8816/task6.git']])
-                    ]]
+                    
                 )
             }
         }
