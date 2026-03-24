@@ -15,13 +15,13 @@ pipeline {
 
         stage('build_img') {
             steps {
-                sh 'docker build -t pavanimg .'
+                sh 'docker build -t pavan1img .'
             }
         }
 
         stage('tag_img') {
             steps {
-                sh 'docker tag pavanimg pavansai33/pavanimg:v123'
+                sh 'docker tag pavan1img pavansai33/pavan1img:v123'
             }
         }
 
@@ -39,7 +39,7 @@ pipeline {
 
         stage('docker_push') {
             steps {
-                sh 'docker push pavansai33/pavanimg:v123'
+                sh 'docker push pavansai33/pavan1img:v123'
             }
         }
 
